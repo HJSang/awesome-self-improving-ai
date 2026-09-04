@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+title: "Awesome Self-Improving AI: papers, code and blogs on AI that improves its own model, harness and infrastructure"
+message: >-
+  If you find this repository useful for your research,
+  please cite it using the metadata from this file (or via
+  the "Cite this repository" button on the GitHub page).
+type: software
+authors:
+  - given-names: "Hejian"
+    family-names: "Sang"
+    alias: "HJSang"
+abstract: >-
+  Awesome Self-Improving AI is a curated, continuously updated list of papers,
+  open-source code, and technical blogs on AI systems that improve themselves,
+  organised along three axes: the model (self-generated data, self-rewarding,
+  self-play and zero-data RL, self-adapting weights), the harness (prompt and
+  context evolution, memory, skills, workflow search, self-modifying harness
+  code, evolving evaluators), and the infrastructure (GPU kernels, compilers
+  and serving configuration, training and data pipelines, program and
+  algorithm discovery), plus automated AI research, benchmarks, safety and
+  limits, frameworks, and blogs. Each entry is annotated by what is modified,
+  the improvement signal, and loop closure.
+keywords:
+  - "self-improving AI"
+  - "recursive self-improvement"
+  - "self-evolving agents"
+  - "agent skills"
+  - "agent memory"
+  - "harness engineering"
+  - "self-play"
+  - "automated AI research"
+  - "kernel generation"
+  - "AlphaEvolve"
+  - "awesome list"
+repository-code: "https://github.com/HJSang/awesome-self-improving-ai"
+url: "https://github.com/HJSang/awesome-self-improving-ai"
+license: MIT
+date-released: "2026-09-04"
