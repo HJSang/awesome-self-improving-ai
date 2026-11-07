@@ -11,7 +11,7 @@
 ![ModelCoEvo](https://img.shields.io/badge/Model:_Weights_+_Harness_Co--Evolution-12-B03A2E?style=for-the-badge)
 <br>
 ![Prompt](https://img.shields.io/badge/Harness:_Prompt_&_Context-11-7CC8FF?style=for-the-badge)
-![Memory](https://img.shields.io/badge/Harness:_Memory-26-4FA3E0?style=for-the-badge)
+![Memory](https://img.shields.io/badge/Harness:_Memory-27-4FA3E0?style=for-the-badge)
 ![Skills](https://img.shields.io/badge/Harness:_Skills-29-2F7FC0?style=for-the-badge)
 ![Workflow](https://img.shields.io/badge/Harness:_Workflow_Search-9-1F5F9A?style=for-the-badge)
 ![HarnessCode](https://img.shields.io/badge/Harness:_Self--Modifying_Code-27-123F6B?style=for-the-badge)
@@ -279,6 +279,7 @@ Experience is written into a persistent store that changes what the agent does n
 | [SAGE](https://arxiv.org/abs/2605.12061) | [![Paper](https://img.shields.io/badge/📄-paper-845C40?style=for-the-badge)](https://arxiv.org/abs/2605.12061) | 2026.05 | Wang, Zhao et al. | [arXiv 2605.12061](https://arxiv.org/abs/2605.12061) | **SAGE: A Self-Evolving Agentic Graph-Memory Engine for Structure-Aware Associative Memory** |
 | [CASCADE](https://github.com/guosyjlu/CASCADE) | <img src="https://img.shields.io/github/stars/guosyjlu/CASCADE?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.05 | KCL (Guo, Du, …) | [arXiv 2605.06702](https://arxiv.org/abs/2605.06702) | **CASCADE: Case-Based Continual Adaptation for LLMs During Deployment** — plus the DTLBench deployment-time-learning benchmark |
 | [Faulty Memories](https://arxiv.org/abs/2605.12978) | [![Paper](https://img.shields.io/badge/📄-paper-845C40?style=for-the-badge)](https://arxiv.org/abs/2605.12978) | 2026.05 | — | [arXiv 2605.12978](https://arxiv.org/abs/2605.12978) | **Useful Memories Become Faulty When Continuously Updated by LLMs** — negative result: drift under continual LLM rewriting |
+| [agent-qa](https://vostride.com) | <img src="https://img.shields.io/github/stars/vostride/agent-qa?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=ffd700" alt="Stars"> | 2026.05 | vostride | [Memory](https://vostride.com/docs/agent-qa/memory) · [Self-improvement](https://vostride.com/docs/agent-qa/self-improvement) · [Code](https://github.com/vostride/agent-qa) | **Persistent app memory for AI QA** — run verdicts, screenshot evidence and later outcomes drive evidence-gated updates to memidex facts, cautions and procedures reused across runs (L2; FSL-1.1-ALv2) |
 | [AutoMem](https://arxiv.org/abs/2607.01224) | [![Paper](https://img.shields.io/badge/📄-paper-845C40?style=for-the-badge)](https://arxiv.org/abs/2607.01224) | 2026.07 | Wu, Zhu et al. | [arXiv 2607.01224](https://arxiv.org/abs/2607.01224) | **AutoMem: Automated Learning of Memory as a Cognitive Skill** |
 
 <details>
@@ -287,6 +288,7 @@ Experience is written into a persistent store that changes what the agent does n
 - **Reflexion / Generative Agents / MemGPT** persist per-task or per-session state; whether they are "self-improving" depends on whether memory survives across *tasks*. ExpeL, AWM and ReasoningBank are the ones that explicitly make cross-task, self-judged insights.
 - For the full memory landscape (products, benchmarks, parametric memory) see [TeleAI-UAGI/Awesome-Agent-Memory](https://github.com/TeleAI-UAGI/Awesome-Agent-Memory); this section keeps only memory systems that *evolve from the agent's own experience*.
 - **Faulty Memories** (2605.12978) is the caution for the whole section.
+- **agent-qa** updates app knowledge rather than model weights or its own updater. Local confirmed facts can be promoted after evidence gates; CI only proposes changes. This is a bounded memory-update loop, not evidence of recursive updater improvement or a measured performance gain.
 
 </details>
 
